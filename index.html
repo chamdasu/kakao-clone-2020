@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to kakao</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>14%</span>
+            <i class="fas fa-battery-quarter fa-lg" style="padding-top: 2px;"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">카카오클론에 오신 것을 환영합니다</h1>
+        <p class="welcome-header__text">
+            카카오 계정이 이미 있으시다면,
+            이메일 또는 전화번호를 입력하여 로그인하세요.
+        </p>
+    </header>
+
+    <!--form:정보를 제출하기 위한 
+        대화형 컨트롤을 포함하는 문서 구획을 나타냅니다.-->
+    <form action="friends.html" method="GET" id="login-form">
+        <input type="text" placeholder="Email or phone number">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="로그인">
+        <a href="#">계정 혹은 비밀번호를 잊어버리셨나요?</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/0d2ba77b4c.js" crossorigin="anonymous"></script>
+</body>
+</html>

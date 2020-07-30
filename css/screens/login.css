@@ -1,0 +1,71 @@
+.welcome-header{
+    margin-top: 20%;
+    text-align: center;
+    line-height: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:default;
+}
+.welcome-header__title{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.welcome-header__text{
+    width: 60%;
+    margin-bottom: 60px;
+    opacity: .4;
+    font-weight: 400;
+}
+
+
+
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#login-form input {
+    padding: 15px 0px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/*[]는 속성 선택자로, :not은 '[type="submit"]의 속성이 아닌경우에 이것을 적용함'이라는 뜻*/
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color .3s ease-in-out;
+}
+#login-form input:first-child{
+    padding-left:20px;
+}
+#login-form input:nth-child(2){
+    padding-left:20px;
+}
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 500;
+}
+#login-form input:focus{
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    color: rgb(20, 11, 4);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#login-form a{
+    text-align: center;
+    color: rgb(14, 16, 26, 0.6);
+    font-size: 14px;
+    transition: color .3s ease-in-out;
+}
+#login-form a:hover{
+    color: rgb(14, 16, 26, 1);
+}
